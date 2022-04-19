@@ -13,45 +13,64 @@
     text-shadow: 7px 4px 5px rgb(77, 76, 76);
 }
 
-ul {
 
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-
-}
-
-ul li {
-    display: inline-block;
-    
-}
-
-ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 16px 100px ;
-
-}
-
-#menu{
-    background-color: rgb(80, 80, 82)
-        
-}
-
-ul li a:hover {
-    background-color: rgb(255, 159, 95);
-    display: block;
-    text-decoration: none;
-}
 
 #introduccion {
     background-color: white;
 
 
 }
+
+#menu {
+    margin: auto;
+    width: 600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    padding: 10px 510px;
+    
+        
+}
+
+ul, ol {
+    list-style: none;
+    
+    
+}
+
+.nav li a {
+    background-color: grey ;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+
+
+
+.nav li a:hover {
+    background-color: rgb(212, 167, 255);
+    
+}
+
+.nav > li {
+    float: left;
+    
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    
+}
+
+.nav li:hover > ul {
+    display: block;
+    
+}
+
+
 
 #htmlimg {
     vertical-align: middle;
@@ -76,3 +95,4 @@ ul li a:hover {
 #parrafotema1 {
     text-align: justify;
 }
+
