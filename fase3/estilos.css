@@ -96,3 +96,17 @@ ul, ol {
     text-align: justify;
 }
 
+#titulotema2 {
+    background-color: rgba(128, 128, 128, 0.418);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#parrafotema2 {
+    text-align: justify;
+}
+
+
