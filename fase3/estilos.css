@@ -1,0 +1,78 @@
+#fondo {
+    background-color: rgba(255, 255, 255, 0.788);padding: 60px;
+}
+
+
+#titulo {
+    background-color: rgb(355, 204, 184);
+    font-family: fantasy;
+    color: rgb(255, 115, 0);
+    font-size: 100px;
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: 7px 4px 5px rgb(77, 76, 76);
+}
+
+ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+ul li {
+    display: inline-block;
+    
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 16px 100px ;
+
+}
+
+#menu{
+    background-color: rgb(80, 80, 82)
+        
+}
+
+ul li a:hover {
+    background-color: rgb(255, 159, 95);
+    display: block;
+    text-decoration: none;
+}
+
+#introduccion {
+    background-color: white;
+
+
+}
+
+#htmlimg {
+    vertical-align: middle;
+    float: left;
+    font-size: 400%;
+}
+
+#parrafointro {
+    text-align: center; 
+    font-weight: bold;
+}
+
+#titulotema1 {
+    background-color: rgba(128, 128, 128, 0.418);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#parrafotema1 {
+    text-align: justify;
+}
