@@ -4,7 +4,7 @@
 
 
 #titulo {
-    background-color: rgb(355, 204, 184);
+    background-color: rgb(355, 204, 184); 
     font-family: fantasy;
     color: rgb(255, 115, 0);
     font-size: 100px;
@@ -26,7 +26,10 @@
     width: 600px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
-    padding: 10px 510px;
+    padding: 0px 510px;
+    background-color: rgb(78, 78, 78) ;
+    
+
     
         
 }
