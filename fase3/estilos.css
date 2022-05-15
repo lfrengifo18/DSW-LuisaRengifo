@@ -125,6 +125,7 @@ ul, ol {
 
 #contenidotema1 {
     grid-column: 1/4;
+    text-align: center;
 }
 
 #contenidotema2 {
