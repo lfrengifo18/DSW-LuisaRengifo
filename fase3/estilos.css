@@ -13,21 +13,35 @@
     text-shadow: 7px 4px 5px rgb(77, 76, 76);
 }
 
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
+
+aside {
+    grid-column: 4/5;
+}
 
 #introduccion {
     background-color: white;
+    grid-column: 1/4;
 
+}
 
+#piepagina {
+    background-color: gray;
 }
 
 #menu {
     margin: auto;
-    width: 600px;
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: inline-block;
+    display: flex;
     padding: 0px 510px;
     background-color: rgb(78, 78, 78) ;
+    justify-content: space-around;
+    flex-direction: row;
     
 
     
@@ -93,11 +107,10 @@ ul, ol {
     font-size: 20px;
     vertical-align: middle;
     text-align: center;
+    
 }
 
-#parrafotema1 {
-    text-align: justify;
-}
+
 
 #titulotema2 {
     background-color: rgba(128, 128, 128, 0.418);
@@ -108,8 +121,22 @@ ul, ol {
     text-align: center;
 }
 
-#parrafotema2 {
-    text-align: justify;
+
+
+#contenidotema1 {
+    grid-column: 1/4;
 }
 
+#contenidotema2 {
+    grid-column: 1/4;
+}
 
+#fotoimg {
+    display: block;
+    margin: 0px auto;
+}
+
+#parrafoautor {
+    background-color: rgba(255, 230, 220, 0.418);
+    text-align: center;
+ }
