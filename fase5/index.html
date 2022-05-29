@@ -6,108 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luisa Fernanda Rengifo Zapata" />
     <meta name="description" content="Etiquetas Básicas de HTML, atributos y valores" />
-    <meta name="keywords" content="html, etiquetas, atributos, valores" />
+    <meta name="keywords" content="html, etiquetas html, atributos html, valores html" />
     <title>SITIO WEB HTML</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> .eng {
+        display: none;
+    }
+    </style>
 </head>
+<script>
+    function cambiaridioma (){
+        var idioma=document.getElementById("idioma").value;
+        if (idioma=="esp")
+        {
+            var elementosenespanol=document.getElementsByClassName("esp");
+            
+            for (let i = 0; i < elementosenespanol.length; i++) { elementosenespanol[i].style.display = 'block' ;}
+
+            var elementoseningles=document.getElementsByClassName("eng");
+            for (let i = 0; i < elementoseningles.length; i++) { elementoseningles[i].style.display = 'none' ;}
+
+        }else{
+            var elementosenespanol=document.getElementsByClassName("esp");
+           
+            for (let i = 0; i < elementosenespanol.length; i++) { elementosenespanol[i].style.display = 'none' ;}
+
+            var elementoseningles=document.getElementsByClassName("eng");
+            for (let i = 0; i < elementoseningles.length; i++) { elementoseningles[i].style.display = 'block' ;}
+        }
+
+        };
+
+    
+</script>
 <body id="fondo">
 
    
  
     <header>
 	
-		<h1 id="titulo">HTML 5<br> 
-                        
-                    
-         </h1> 
+		<h1 id="titulo" class="esp">HTML 5<br> </h1> 
+        <h1 id="titulo" class="eng" >HTML 5<br> </h1> 
 
-        </header>
+    </header>
 	
-	
+<select name="idioma" id="idioma" onclick="cambiaridioma()">
+    <option value="esp" selected>Español</option>
+    <option value="eng">English</option>
+</select>
 
 <nav id="menu">
-       
-        <ul class="nav">
-
-            <li><a href="index.html"><i class="fa fa-solid fa-circle"></i>     Inicio</a></li>
-
-            <li><a href="#"><i class="fa fa-solid fa-book"></i>    Temas</a>
-            
+        <ul class="nav" >
+            <li class = "esp"><a href="index.html" ><i class="fa fa-solid fa-circle" ></i>     Inicio</a></li>
+            <li class = "eng"><a href="index.html" ><i class="fa fa-solid fa-circle" ></i>     Home</a></li>
+            <li class = "esp"><a href="#"><i class="fa fa-solid fa-book"></i>    Temas</a>
+            <li class = "eng"><a href="#"><i class="fa fa-solid fa-book"></i>    Themes</a>
                 <ul>
-                    <li><a href="tema1.html">Etiquetas Basicas</a></li>
-                    <li><a href="tema2.html">Variable y Atributos</a></li>
+                    <li class = "esp"><a href="tema1.html">Etiquetas Basicas</a></li>
+                    <li class = "eng"><a href="tema1.html">Basic Tags</a></li>
+                    <li class = "esp"><a href="tema2.html">Variables y Atributos</a></li>
+                    <li class = "eng"><a href="tema2.html">Variables and Attribs</a></li>
                 </ul>
-            
             </li>
-
-                
-
-            <li><a href="#"> <i class="fa fa-solid fa-film"></i>   Recursos Digitales</a>
-            
+            <li class = "esp"><a href="#"> <i class="fa fa-solid fa-film"></i>   Recursos Digitales</a>
+            <li class = "eng"><a href="#"> <i class="fa fa-solid fa-film"></i>   Digital Resources</a>
                 <ul>
-                    <li><a href="recursosdigi1.html">Video</a></li>
-                    <li><a href="recursosdigi2.html">Audio</a></li>
+                    <li class = "esp"><a href="recursosdigi1.html">Video</a></li>
+                    <li class = "eng"><a href="recursosdigi1.html">Video</a></li>
+                    <li class = "esp"><a href="recursosdigi2.html">Audio</a></li>
+                    <li class = "eng"><a href="recursosdigi2.html">Audio</a></li>
                 </ul>
-            
-            
             </li>
-
-            <li><a href="#"><i class="fa fa-solid fa-check"></i>   Aprendizaje</a>
-            
+            <li class = "esp"><a href="#"><i class="fa fa-solid fa-check"></i>   Aprendizaje</a>
+            <!--<li class = "eng"><a href="#"><i class="fa fa-solid fa-check"></i>   Learning</a>-->
                 <ul>
-                    <li><a href="evaluacion1.html">Evaluacion 1</a></li>
-                    <li><a href="evaluacion2.html">Evaluacion 2</a></li>
+                    <li class = "esp"><a href="evaluacion1.html">Evaluacion 1</a></li>
+                    <li class = "eng"><a href="evaluacion1.html">Test 1</a></li>
+                    <li class = "esp"><a href="evaluacion2.html">Evaluacion 2</a></li>
+                    <li class = "eng"><a href="evaluacion2.html">Test 2</a></li>
                 </ul>
-            
             </li>
-            <li><a href="#"><i class="fa fa-solid fa-user"></i>    Acerca de</a>
-            
+            <li class = "esp"><a href="#"><i class="fa fa-solid fa-user"></i>    Acerca de</a>
+            <li class = "eng"><a href="#"><i class="fa fa-solid fa-user"></i>    About</a>
                 <ul>
-                    <li><a href="autor.html">Autor</a></li>
+                    <li class = "esp"><a href="autor.html">Autor</a></li>
+                    <li class = "eng"><a href="autor.html">Author</a></li>
     
                 </ul>
-            
             </li>
-
         </ul>
-
+        <!--  SEPARADOR DE MENUS POR IDIOMAS  -->
+        
 </nav>
 
 <ul class="breadcrumbs">
 
     <li class="breadcrumbs__item">
         
-        <a href="index.html" class="breadcrumbs__link  breadcrumbs__link--active">Inicio</a>
-
-    </li>
-
-    <li class="breadcrumbs__item">
-        
-        <a href="tema1.html" class="breadcrumbs__link">Temas</a>
-
-    </li>
-
-    <li class="breadcrumbs__item">
-        
-        <a href="recursosdigi1.html" class="breadcrumbs__link">Recursos Digitales</a>
-
-    </li>
-
-    <li class="breadcrumbs__item">
-        
-        <a href="evaluacion1.html" class="breadcrumbs__link">Aprendizaje</a>
-
-    </li>
-
-
-    <li class="breadcrumbs__item">
-        
-        <a href="autor.html" class="breadcrumbs__link">Acerca de</a>
+        <a href="" class="breadcrumbs__link  breadcrumbs__link--active">Inicio</a>
 
     </li>
 
 </ul>
+
+
 
 <section>
 
@@ -117,9 +120,10 @@
 
         <img id=htmlimg src="img/disenadores.jpg" width="700" alt=""> <br><br><br><br><br><br><br><br>
         
-        <h2> Introducción </h2>
+        <h2 class = "esp"> Introducción </h2>
+        <h2 class = "eng"> Introduction </h2>
         
-        <p ID="parrafointro">
+        <p ID="parrafointro" class = "esp">
             
             
             Este entorno se desarrolló con el propósito de dar conocer la estructura de HTML Elementos y etiquetas que 
@@ -128,6 +132,17 @@
             El lenguaje HTML (hypertext markup language) es el lenguaje con el que se definen páginas Web. <br>
             Permite describir el contenido de una página, incluyendo texto y otros elementos (imágenes, vídeo, otros documentos, etc.). <br><br>
             HTML es la tecnología fundamental de la World Wide Web y ha ido evolucionando hasta nuestros días. <br>
+        
+        </p>
+        <p ID="parrafointro" class = "eng">
+            
+            
+            This environment was developed with the purpose of making HTML's structure of common knowledge, including Elements and tags that will support us at the moment of defining a web's basic layer.
+            <br><br>
+
+            HTML languaje(hypertext markup language) is the languaje with which web pages are defined. <br>
+            Allows to describe the contents of a web page, incliding text and other elements (images, video, other documents, etc). <br><br>
+            HTML is the fundamental technology in the World Wide Web and it has been evolving up to the date. <br>
         
         </p>
         
